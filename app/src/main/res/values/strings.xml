@@ -9,4 +9,7 @@
     <string name="try_again">Try Again</string>
     <string name="game_won_message">You Won!</string>
     <string name="game_over_message">Game Over</string>
+    <string name="menu_item_1">Item 1</string>
+    <string name="menu_item_2">Item 2</string>
+    <string name="menu_item_3">Item 3</string>
 </resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/example/titlefragment/StartGameFragment.kt">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/main/java/com/example/titlefragment/StartGameFragment.kt" />
+              <option name="originalContent" value="package com.example.titlefragment&#10;import android.os.Bundle&#10;import android.view.View&#10;import androidx.fragment.app.Fragment&#10;import androidx.navigation.fragment.findNavController&#10;class StartGameFragment : Fragment(R.layout.fragment_start_game) {&#10;    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {&#10;        super.onViewCreated(view, savedInstanceState)&#10;        view.findViewById&lt;View&gt;(R.id.btn_win).setOnClickListener {&#10;            findNavController().navigate(R.id.action_startGameFragment_to_gameWonFragment)&#10;        }&#10;        view.findViewById&lt;View&gt;(R.id.btn_lose).setOnClickListener {&#10;            findNavController().navigate(R.id.action_startGameFragment_to_gameOverFragment)&#10;        }&#10;    }&#10;}&#10;" />
+              <option name="updatedContent" value="package com.example.titlefragment&#10;&#10;import android.os.Bundle&#10;import android.view.LayoutInflater&#10;import android.view.Menu&#10;import android.view.MenuInflater&#10;import android.view.MenuItem&#10;import android.view.View&#10;import android.view.ViewGroup&#10;import android.widget.Toast&#10;import androidx.fragment.app.Fragment&#10;import androidx.navigation.fragment.findNavController&#10;&#10;class StartGameFragment : Fragment(R.layout.fragment_start_game) {&#10;    override fun onCreateView(&#10;        inflater: LayoutInflater,&#10;        container: ViewGroup?,&#10;        savedInstanceState: Bundle?&#10;    ): View? {&#10;        setHasOptionMenu()&#10;        return super.onCreateView(inflater, container, savedInstanceState)&#10;    }&#10;&#10;    private fun setHasOptionMenu() {&#10;        setHasOptionsMenu(true)&#10;    }&#10;&#10;    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {&#10;        inflater.inflate(R.menu.start_game_menu, menu)&#10;    }&#10;&#10;    override fun onOptionsItemSelected(item: MenuItem): Boolean {&#10;        return when (item.itemId) {&#10;            R.id.menu_item_1, R.id.menu_item_2, R.id.menu_item_3 -&gt; {&#10;                Toast.makeText(requireContext(), item.title, Toast.LENGTH_SHORT).show()&#10;                true&#10;            }&#10;&#10;            else -&gt; super.onOptionsItemSelected(item)&#10;        }&#10;    }&#10;&#10;    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {&#10;        super.onViewCreated(view, savedInstanceState)&#10;&#10;        view.findViewById&lt;View&gt;(R.id.btn_win).setOnClickListener {&#10;            findNavController().navigate(R.id.action_startGameFragment_to_gameWonFragment)&#10;        }&#10;&#10;        view.findViewById&lt;View&gt;(R.id.btn_lose).setOnClickListener {&#10;            findNavController().navigate(R.id.action_startGameFragment_to_gameOverFragment)&#10;        }&#10;    }&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+              <option name="originalContent" value="&lt;resources&gt;&#10;    &lt;string name=&quot;app_name&quot;&gt;TitleFragment&lt;/string&gt;&#10;    &lt;string name=&quot;start_game_title&quot;&gt;Start Game&lt;/string&gt;&#10;    &lt;string name=&quot;game_won_title&quot;&gt;Game Won&lt;/string&gt;&#10;    &lt;string name=&quot;game_over_title&quot;&gt;Game Over&lt;/string&gt;&#10;    &lt;string name=&quot;win_game&quot;&gt;Simulate Win&lt;/string&gt;&#10;    &lt;string name=&quot;lose_game&quot;&gt;Simulate Loss&lt;/string&gt;&#10;    &lt;string name=&quot;play_again&quot;&gt;Play Again&lt;/string&gt;&#10;    &lt;string name=&quot;try_again&quot;&gt;Try Again&lt;/string&gt;&#10;    &lt;string name=&quot;game_won_message&quot;&gt;You Won!&lt;/string&gt;&#10;    &lt;string name=&quot;game_over_message&quot;&gt;Game Over&lt;/string&gt;&#10;&lt;/resources&gt;" />
+              <option name="updatedContent" value="&lt;resources&gt;&#10;    &lt;string name=&quot;app_name&quot;&gt;TitleFragment&lt;/string&gt;&#10;    &lt;string name=&quot;start_game_title&quot;&gt;Start Game&lt;/string&gt;&#10;    &lt;string name=&quot;game_won_title&quot;&gt;Game Won&lt;/string&gt;&#10;    &lt;string name=&quot;game_over_title&quot;&gt;Game Over&lt;/string&gt;&#10;    &lt;string name=&quot;win_game&quot;&gt;Simulate Win&lt;/string&gt;&#10;    &lt;string name=&quot;lose_game&quot;&gt;Simulate Loss&lt;/string&gt;&#10;    &lt;string name=&quot;play_again&quot;&gt;Play Again&lt;/string&gt;&#10;    &lt;string name=&quot;try_again&quot;&gt;Try Again&lt;/string&gt;&#10;    &lt;string name=&quot;game_won_message&quot;&gt;You Won!&lt;/string&gt;&#10;    &lt;string name=&quot;game_over_message&quot;&gt;Game Over&lt;/string&gt;&#10;    &lt;string name=&quot;menu_item_1&quot;&gt;Item 1&lt;/string&gt;&#10;    &lt;string name=&quot;menu_item_2&quot;&gt;Item 2&lt;/string&gt;&#10;    &lt;string name=&quot;menu_item_3&quot;&gt;Item 3&lt;/string&gt;&#10;&lt;/resources&gt;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/themes.xml">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/app/src/main/res/values/themes.xml" />
+              <option name="originalContent" value="&lt;resources xmlns:tools=&quot;http://schemas.android.com/tools&quot;&gt;&#10;    &lt;!-- Base application theme. --&gt;&#10;    &lt;style name=&quot;Base.Theme.TitleFragment&quot; parent=&quot;Theme.Material3.DayNight.NoActionBar&quot;&gt;&#10;        &lt;!-- Customize your light theme here. --&gt;&#10;        &lt;!-- &lt;item name=&quot;colorPrimary&quot;&gt;@color/my_light_primary&lt;/item&gt; --&gt;&#10;    &lt;/style&gt;&#10;&#10;    &lt;style name=&quot;Theme.TitleFragment&quot; parent=&quot;Base.Theme.TitleFragment&quot; /&gt;&#10;&lt;/resources&gt;" />
+              <option name="updatedContent" value="&lt;resources&gt;&#10;    &lt;!-- Base application theme. --&gt;&#10;    &lt;style name=&quot;Base.Theme.TitleFragment&quot; parent=&quot;Theme.Material3.DayNight&quot;&gt;&#10;        &lt;!-- Customize your light theme here. --&gt;&#10;        &lt;!-- &lt;item name=&quot;colorPrimary&quot;&gt;@color/my_light_primary&lt;/item&gt; --&gt;&#10;    &lt;/style&gt;&#10;&#10;    &lt;style name=&quot;Theme.TitleFragment&quot; parent=&quot;Base.Theme.TitleFragment&quot; /&gt;&#10;&lt;/resources&gt;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
